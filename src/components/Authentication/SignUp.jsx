@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {
+    Link
+} from "react-router-dom";
 
 export default class SignUp extends Component {
 
@@ -8,7 +11,7 @@ export default class SignUp extends Component {
             email: '',
             password: '',
             firstName: '',
-            lastname: ''
+            lastName: ''
 
         }
     }
@@ -22,34 +25,36 @@ export default class SignUp extends Component {
         console.log(this.state);
     }
 
+
+
     render() {
         return (
-            <div className="container">
-                <form onSubmit={this.handleSubmit}>
-                    <h5>Sign UP</h5>
+
+            <div className="container signup" >
+                <form className="white" onSubmit={this.handleSubmit}>
+                    <h5 className="grey-text text-darken-3">Sign Up</h5>
                     <div className="input-field">
-                        <label for="email">Email</label>
-                        <input type='email' id="email" onChange={this.handleChange} />
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id='email' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <label for="password">Password</label>
-                        <input type='password' id="password" onChange={this.handleChange} />
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id='password' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <label for="firstName">First Name</label>
-                        <input type='firstName' id="email" onChange={this.handleChange} />
+                        <label htmlFor="firstName">First Name</label>
+                        <input type="text" id='firstName' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <label for="lastName">Last Name</label>
-                        <input type='lastName' id="lastName" onChange={this.handleChange} />
+                        <label htmlFor="lastName">Last Name</label>
+                        <input type="text" id='lastName' onChange={this.handleChange} />
                     </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right"></i>
-                    </button>
+                    <div className="input-field">
+                        <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
+                    </div>
                 </form>
-            </div >
+            </div>
+
         )
     }
 }
-
-
