@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './store/reducer/rootreducer';
-import { Provider } from 'react-redux'
-const store = createStore(rootReducer);
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { reduxFirestore, getFirestore } from 'redux-firestore';
+import { reduxReactFirebase, getFirebase } from 'react-redux-firebase';
+import firebaseConfig from './config/firebaseConfig';
+
+
+const store = createStore(rootReducer,
+    compose(
+        applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
+        reduxFirestore(firebaseConfig),
+        reduxReactFirebase(firebaseConfig)
+
+    )
+);
+
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

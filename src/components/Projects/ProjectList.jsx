@@ -9,7 +9,6 @@ export default function ProjectList({ projects }) {
                     <ProjectSummary project={project} key={project.id} />
                 )
             })}
-
         </div>
     )
 }
