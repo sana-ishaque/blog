@@ -1,11 +1,11 @@
 export const createProject = (project) => {
     return (dispatch, getState, { getFirebase, getFirestore }) => {
-        // async call tp database
+        // async call to database
         const firestore = getFirestore();
         firestore.collection('stories').add({
             ...project,
-            authorFirstName: 'Sarah',
-            authorLastName: 'Ahmed',
+            authorFirstName: 'Ali',
+            authorLastName: 'Haider',
             authorId: 12345,
             createdAt: new Date()
         }).then(() => {

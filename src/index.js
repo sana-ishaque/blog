@@ -12,13 +12,24 @@ import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
 import firebaseConfig from './config/firebaseConfig';
 
 
-const store = createStore(rootReducer,
+const middlewares = [
+    thunk.withExtraArgument(getFirebase, getFirestore)
+]
+
+const store = createStore(
+    rootReducer,
     compose(
-        applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
-        reduxFirestore(firebaseConfig),
-        reactReduxFirebase(firebaseConfig)
+        applyMiddleware(...middlewares),
     )
 );
+
+// const store = createStore(rootReducer,
+//     compose(
+//         applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
+//         reactReduxFirebase(firebaseConfig), // redux binding for firebase
+//         reduxFirestore(firebaseConfig) // redux bindings for firestore
+//     )
+// );
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

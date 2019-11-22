@@ -3,6 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyALjWJLA2sm5D_TcYT2kiIajpN0YUIxe68",
@@ -17,6 +18,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.firestore().settings({ timestampsInSnapshots: true })
-firebase.analytics();
+// firebase.analytics();
 
 export default firebase;
