@@ -1,7 +1,8 @@
+import { firestore } from '../../config/firebaseConfig'
+
 export const createProject = (project) => {
     return (dispatch, getState, { getFirebase, getFirestore }) => {
         // async call to database
-        const firestore = getFirestore();
         firestore.collection('stories').add({
             ...project,
             authorFirstName: 'Ali',
