@@ -8,12 +8,11 @@ nav {
 
 nav ul a {
     color: #fc8462;
-
 }
-nav ul a:hover{
+
+nav ul a:hover {
     background-color: none;
-    color: #fc8462;
-    text-decoration: none;
+    color: #de8f43;
 }
 
 .container {
@@ -34,6 +33,14 @@ nav a {
     font-style: normal
 }
 
-.btn-floating  active{
-    background-color: #fc8462;
+nav ul a:hover {
+    background-color: transparent;
+    color: #86b418;
+    text-decoration: none;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #86b418;
+
 }

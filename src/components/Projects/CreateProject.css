@@ -1,0 +1,25 @@
+.container-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 55%;
+    padding: 20px;
+    filter: drop-shadow(2px 4px 6px #fd9362);
+}
+
+.btn {
+    background-color: #fd9362;
+}
+
+.btn:hover {
+    background-color: #86b418;
+    color: white;
+}
+
+h5 {
+    color: #ff6924;
+}

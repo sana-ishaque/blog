@@ -1,0 +1,8 @@
+.btn-floating {
+    background-color: #fc8462;
+}
+.btn-floating:hover{
+    color: #86b418;
+    background-color: white;
+
+}
