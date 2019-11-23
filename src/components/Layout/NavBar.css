@@ -1,0 +1,39 @@
+nav {
+    color: black;
+    background-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    line-height: 100px;
+}
+
+nav ul a {
+    color: #fc8462;
+
+}
+nav ul a:hover{
+    background-color: none;
+    color: #fc8462;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 85%;
+    }
+}
+
+nav a {
+    color: #fc8462;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal
+}
+
+.btn-floating  active{
+    background-color: #fc8462;
+}

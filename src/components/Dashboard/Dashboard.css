@@ -1,0 +1,7 @@
+.dashboardContainer{
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

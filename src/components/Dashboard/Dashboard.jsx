@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Notifications from './Notifications'
 import ProjectList from '../Projects/ProjectList'
 import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import './Dashboard.css'
 
 class Dashboard extends Component {
     render() {
@@ -12,9 +14,7 @@ class Dashboard extends Component {
                 <div className="project-list">
                     <ProjectList projects={projects} />
                 </div>
-                <div className="project-notif">
-                    <Notifications />
-                </div>
+
             </div>
         )
     }
@@ -26,3 +26,7 @@ const mapStateToProps = (state) => {
     }
 }
 export default connect(mapStateToProps)(Dashboard) 
+
+//  <div className="project-notif">
+//                     <Notifications />
+//                 </div>
