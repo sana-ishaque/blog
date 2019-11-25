@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SignedInLink from './SignedInLink';
 import SignedOutLink from './SignedOutLink';
 import './NavBar.css';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 const NavBar = () => {
     return (
