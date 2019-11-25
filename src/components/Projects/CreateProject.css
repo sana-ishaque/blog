@@ -7,8 +7,10 @@
 
 form {
     width: 55%;
+    margin:  50px auto auto auto;
     padding: 20px;
     filter: drop-shadow(2px 4px 6px #fd9362);
+    background-color: white;
 }
 
 .btn {
@@ -22,4 +24,8 @@ form {
 
 h5 {
     color: #ff6924;
+}
+
+.form-group{
+    text-align: start;
 }

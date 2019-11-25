@@ -26,14 +26,15 @@ export default class SignIn extends Component {
         return (
 
             <Form>
+                <h5>Create a Story</h5>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" id="email" onChange={this.handleChange} placeholder="Enter email" />
+                    <Form.Control type="email" id="email" onChange={this.handleChange}  />
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" id="password" onChange={this.handleChange} placeholder="Password" />
+                    <Form.Control type="password" id="password" onChange={this.handleChange}  />
                 </Form.Group>
                 <Button variant="primary" type="submit">Submit</Button>
             </Form>

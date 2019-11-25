@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Notifications from './Notifications'
 import ProjectList from '../Projects/ProjectList'
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -15,14 +14,13 @@ class Dashboard extends Component {
                 <div className="project-list">
                     <ProjectList projects={projects} />
                 </div>
-
             </div>
         )
     }
 }
 
 
-export default Dashboard
+export default Dashboard;
 
 //  <div className="project-notif">
 //                     <Notifications />

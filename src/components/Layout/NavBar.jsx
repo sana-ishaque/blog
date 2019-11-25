@@ -11,6 +11,7 @@ const NavBar = () => {
             <div className="container">
                 <Link to='/' className="logo" >INSCRIBE</Link>
                 <SignedInLink />
+                <SignedOutLink />
             </div>
         </nav>
     )
@@ -25,7 +26,6 @@ export default connect(mapStateToProps)(NavBar);
 // <nav>
 // <div class="nav-wrapper">
 //     <a href="#" class="brand-logo">Blog</a>
-//     <SignedOutLink />
 //     <SignedOutLink />
 
 // </div>

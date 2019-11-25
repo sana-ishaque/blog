@@ -32,7 +32,7 @@ export default class SignUp extends Component {
 
             <div className="container signup" >
                 <form className="white" onSubmit={this.handleSubmit}>
-                    <h5 className="grey-text text-darken-3">Sign Up</h5>
+                    <h5>Sign Up</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
                         <input type="email" id='email' onChange={this.handleChange} />
