@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function ProjectDetails(props) {
     const id = props.match.params.id;

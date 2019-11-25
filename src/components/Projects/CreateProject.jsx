@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import { createProject } from '../../store/actions/projectActions';
 import { connect } from 'react-redux';
 import './CreateProject.css'
-let style={
-
-
-    
-}
-
 
 class CreateProject extends Component {
 
