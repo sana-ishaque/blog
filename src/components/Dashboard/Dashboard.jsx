@@ -21,16 +21,8 @@ class Dashboard extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    console.log(state);
 
-}
-export default compose(
-    connect(mapStateToProps),
-    firestoreConnect([
-        { collection: 'stories' }
-    ])
-)(Dashboard)
+export default Dashboard
 
 //  <div className="project-notif">
 //                     <Notifications />
