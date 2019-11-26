@@ -23,6 +23,8 @@ const store = createStore(
     )
 );
 
+
+
 // const store = createStore(rootReducer,
 //     compose(
 //         applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),

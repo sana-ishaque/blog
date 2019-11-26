@@ -30,7 +30,7 @@ export default class SignUp extends Component {
     render() {
         return (
 
-            <div className="container signup" >
+            <div className="container signup" style={{width:'100%'}} >
                 <form className="white" onSubmit={this.handleSubmit}>
                     <h5>Sign Up</h5>
                     <div className="input-field">
@@ -50,7 +50,7 @@ export default class SignUp extends Component {
                         <input type="text" id='lastName' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
+                        <button class= "btn">Sign Up</button>
                     </div>
                 </form>
             </div>
